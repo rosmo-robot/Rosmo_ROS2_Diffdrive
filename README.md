@@ -1,11 +1,13 @@
-# ros-esp32cam-diffdrive
+# Rosmo-ROS2-Differential-Drive
 
-This is a ROS 2 & Micro-ROS project to control an RC tank with differential drive (skid steering) with an ESP32-CAM module. 
-I'm using an XBox 360 gamepad connected to a PC running *Ubuntu 20.04* and [ROS 2 Foxy](https://docs.ros.org/en/foxy/index.html) as tele operation input. 
+This is a ROS 2 & Micro-ROS project to control a differential drive (skid steering) robot with an ESP32 module. 
+
+It is a fork of [@Reinbert's work on ESP32cam](https://github.com/Reinbert/ros_esp32cam_diffdrive)
+
+Using an XBox 360 gamepad connected to a PC running *Ubuntu 20.04* and [ROS 2 Foxy](https://docs.ros.org/en/foxy/index.html) as tele operation input. 
 This data is then sent via wifi to an ESP32 microcontroller running [Micro-ROS](https://micro.ros.org/) which transforms the input to PWM signals controlling the 2 motors.
-At a later stage, the video of the ESP32-CAM module should be sent back to ROS 2 for further processing or display.
 
-Currently, I'm using an *ESP32-DevKitC WROOM-32D* board which doesn't have a built-in camera, but is slightly easier to handle than an ESP32-CAM module because of built-in buttons and a Micro-USB socket. 
+Currently, We're using an *ESP32-DevKitC WROOM-32D* board 
 
 **Note: This is work in progress and doesn't include all features yet.**
 
